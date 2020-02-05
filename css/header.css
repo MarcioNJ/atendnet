@@ -1,0 +1,361 @@
+@charset "utf-8";
+
+/* FONTES */
+
+@font-face {
+    font-family: 'panton-bold-webfont';
+    src: url('fontes/panton/panton-bold-webfont.woff2') format('woff2'),
+         url('fontes/panton/panton-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'panton-lightcaps-webfont';
+    src: url('fontes/panton/panton-lightcaps-webfont.woff2') format('woff2'),
+         url('fontes/panton/panton-lightcaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'panton-light-webfont';
+    src: url('fontes/panton/panton-light-webfont.woff2') format('woff2'),
+         url('fontes/panton/panton-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'panton-regular-webfont';
+    src: url('fontes/panton/panton-regular-webfont.woff2') format('woff2'),
+         url('fontes/panton/panton-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'panton-black-webfont';
+    src: url('fontes/panton/panton-black-webfont.woff2') format('woff2'),
+         url('fontes/panton/panton-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'decalotype-light-webfont';
+    src: url('fontes/decalotype/decalotype-light-webfont.woff2') format('woff2'),
+         url('fontes/decalotype/decalotype-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'decalotype-bold-webfont';
+    src: url('fontes/decalotype/decalotype-bold-webfont.woff2') format('woff2'),
+         url('fontes/decalotype/decalotype-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanova-bold';
+    src: url('fontes/proximanova/proxima-nova-bold-webfont.woff2') format('woff2'),
+         url('fontes/proximanova/proxima-nova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanova-extr-bold';
+    src: url('fontes/proximanova/proximanova-extr-bold.woff2') format('woff2'),
+         url('fontes/proximanova/proximanova-extr-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanova-black';
+    src: url('fontes/proximanova/proxima-nova-black-webfont.woff2') format('woff2'),
+         url('fontes/proximanova/proxima-nova-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanova-light';
+    src: url('fontes/proximanova/proxima-nova-light-webfont.woff2') format('woff2'),
+         url('fontes/proximanova/proxima-nova-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanova-regular';
+    src: url('fontes/proximanova/proxima-nova-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segoe-bold';
+    src: url('fontes/segoe/segoe-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriad-pro';
+    src: url('fontes/myriadPro/myriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rustico';
+    src: url('fontes/rustico/rustico.woff2') format('woff2'),
+    url('fontes/rustico/rustico.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+aricle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+    display: block;
+}
+
+body{
+    line-height: 1;
+    overflow-x: hidden;
+    font-family: 'panton-light-webfont', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquot, q{
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* FIM DO RESET */
+
+div.interface{
+    min-width: 320px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+div.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #2a65ad;
+}
+
+header div.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 30px;
+}
+
+header div.logo img {
+    width: 190px;
+}
+
+div.infos p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 85%;
+    color: #fff;
+    font-family: 'proximanova-light', sans-serif;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #f6f4f4;
+    padding: 30px 0;
+    border-top: 2px solid #2a65ac;
+}
+
+footer address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 83%;
+}
+
+footer address#desktop{
+    display: none;
+}
+
+footer address p {
+    color: #585858;
+    text-transform: uppercase;
+    font-family: 'proximanova-regular', sans-serif;
+    width: 90%;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+footer div.sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+footer div.sociais a {
+    transition: top .5s;
+    top: 0;
+    position: relative;
+    -moz-transition: top .5s;
+    -o-transition: top .5s;
+    -webkit-transition: top .5s;
+    margin: 40px 5px;
+}
+
+footer div.sociais a:hover {
+    top: -10px;
+}
+
+@media screen and (min-width:400px){ 
+    div.infos p {
+        width: 100%;
+    }
+
+    div.infos p img {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width:1200px){ 
+    header {
+        width: 100%;
+        background: url(../imagens/bg-topo-full-site.jpg) center top no-repeat;
+        height: 147px;
+    }
+
+    header div.logo {
+        margin:unset;
+    }
+
+    header div.logo img {
+        width: 100%;
+        max-width: 190px;
+        margin: unset;
+        position: relative;
+        top: 8px;
+        right: 3px;
+        z-index: 2;
+    }
+    
+    header div.deskt {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        position: relative;
+        top: 30px;
+    }
+
+    div.infos {
+        position: relative;
+        left: 315px;
+    }
+
+    div.infos p {
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: -10px;
+        margin-bottom: 0;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
+
+    footer address#mobile{
+        display: none;
+    }
+
+    footer address#desktop{
+        display: flex;
+    }
+
+    footer div.interface {
+        max-width: 1280px;
+    }
+
+    footer div.flex {
+        display: flex;
+        flex-direction: row;
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    footer address {
+        margin-top: 10px;
+        margin-left: 40px;
+        width: 70%;
+    }
+
+    footer address p {
+        text-align: left;
+        width: 100%;
+        margin: 2px 0;
+        font-size: 15px;
+    }
+
+    footer div.sociais {
+        width: 15%;
+        top: 5px;
+        right: 265px;
+        position: relative;
+    }
+
+    footer div.sociais a {
+        margin: 10px 5px 0;
+    }
+
+    a#click-logo {
+        width: 56px;
+        height: 20px;
+        display: flex;
+        align-self: center;
+        margin-left: 40px;
+        margin-top: 45px;
+    }
+}

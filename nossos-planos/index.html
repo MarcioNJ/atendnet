@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Planos | AtendNet Fibra!</title>
+    <meta name="description" content="Internet para sua casa 100% fibra">
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <meta name="keyword"
+        content="AtendNet, fibra, AtendNet Fibra, provedor, salvador, ba, bahia, caixa, caixa dágua, provedor em caixa dágua">
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/planos-chamada.js"></script>
+    <script src="js/default-modal.js"></script>
+    <script src="js/MascaraValidacao.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/libs/animate.css" />
+    <script src="../js/menu.js"></script>
+</head>
+
+<body>
+    <!-- WhatsHelp.io widget -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+5571999881538", // WhatsApp number
+                company_logo_url: "//scontent.fval1-1.fna.fbcdn.net/v/t1.0-1/23032410_320257565121404_5122692070743308368_n.png?_nc_cat=0&oh=9722a1c739533d86b784c7628715210c&oe=5B6EA99E", // URL of company logo (png, jpg, gif)
+                greeting_message: "Fale com a nossa equipe, estamos prontos para te atender.", // Text of greeting message
+                call_to_action: "Nosso WhatsApp - 71 99988-1538", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /WhatsHelp.io widget -->
+    <header>
+        <div class="interface">
+            <div id="modal">
+                <div id="bg"></div>
+                <div class="box">
+
+                    <div class="planos residencial-Plan">
+                        <div class="interface flex">
+                            <a href="" class="close_plan"><strong>x</strong></a>
+                            <div class="interface flex-planos">
+                                <form id="form" name="form" action="envia.php" method="post"
+                                    enctype="multipart/form-data" oninput="valor_planoRadio();">
+                                    <div class="left flex">
+                                        <h3>
+                                            ESCOLHA SEU PLANO<br>
+                                            <strong>DE INTERNET 100% FIBRA</strong>
+                                        </h3>
+                                        <ul class="radios">
+                                            <li class="plan target">
+                                                <input name="sel_plano" type="radio" id="nome_planoRadio1"
+                                                    value="25 MEGA" checked>
+                                                <label for="nome_planoRadio1" class="plano-1 opt teste">
+                                                    <div class="velocidade">
+                                                        <span><strong>25MB</strong></span>
+                                                    </div>
+                                                    <div class="preco">
+                                                        <span>
+                                                            R$ <strong> 69</strong>
+                                                            <p>,90<br>/MÊS</p>
+                                                        </span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="plan target">
+                                                <input name="sel_plano" type="radio" id="nome_planoRadio2"
+                                                    value="35 MEGA">
+                                                <label for="nome_planoRadio2" class="plano-2 teste">
+                                                    <div class="velocidade">
+                                                        <span><strong>35MB</strong></span>
+                                                    </div>
+                                                    <div class="preco">
+                                                        <span>
+                                                            R$ <strong> 79</strong>
+                                                            <p>,90<br>/MÊS</p>
+                                                        </span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="plan target">
+                                                <input name="sel_plano" type="radio" id="nome_planoRadio3"
+                                                    value="50 MEGA">
+                                                <label for="nome_planoRadio3" class="plano-3 teste">
+                                                    <div class="velocidade">
+                                                        <span><strong>50MB</strong></span>
+                                                    </div>
+                                                    <div class="preco">
+                                                        <span>
+                                                            R$ <strong> 89</strong>
+                                                            <p>,90<br>/MÊS</p>
+                                                        </span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="plan target">
+                                                <input name="sel_plano" type="radio" id="nome_planoRadio4"
+                                                    value="100 MEGA">
+                                                <label for="nome_planoRadio4" class="plano-4 teste">
+                                                    <div class="velocidade">
+                                                        <span><strong>100MB</strong></span>
+                                                    </div>
+                                                    <div class="preco">
+                                                        <span>
+                                                            R$ <strong> 99</strong>
+                                                            <p>,90<br>/MÊS</p>
+                                                        </span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <img src="../imagens/logo.png" alt="Logo Fibra Planos">
+                                    </div>
+                                    <div class="right flex">
+                                        <div class="valor">
+                                            <p class="right"> PLANO <strong>ILIMITADO</strong> ESCOLHIDO </p>
+                                            <input type="text" name="valor" readonly id="valor_totRadio"
+                                                value="R$ 69,90" />
+                                            <span>CUSTO / MÊS</span>
+                                        </div>
+                                        <input type="text" name="nome" required placeholder="Nome" class="m" />
+                                        <input type="text" name="celular" placeholder="Telefone/Whatsapp" class="m"
+                                            onKeyPress="MascaraCelular(form.celular);" maxlength="15" />
+                                        <input type="text" name="email" placeholder="E-mail" required
+                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="m" />
+                                        <input type="text" name="endereco" placeholder="Endereço" class="m" required />
+                                        <p><input type="submit" onclick="confirmacaoRadio()" value="CONTRATAR AGORA"
+                                                id="botao" /></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="planos empresarial-Plan">
+                        <div class="interface flex">
+                            <a href="" class="close_plan"><strong>x</strong></a>
+                            <div class="interface flex-planos">
+                                <form id="formEmp" name="form" action="enviaEmp.php" method="post"
+                                    enctype="multipart/form-data" oninput="valor_planoRadioEmp();">
+                                    <div class="left flex">
+                                        <h3>
+                                            ESEMPREO<br>
+                                            <strong>DE INTERNET 100% FIBRA</strong>
+                                        </h3>
+                                        <ul class="radios">
+                                            <li class="plan target">
+                                                <input name="sel_planoEmp" type="radio" id="nome_planoRadioEmp1"
+                                                    value="25 MEGA" checked>
+                                                <label for="nome_planoRadioEmp1" class="plano-1 opt teste">
+                                                    <div class="velocidade">
+                                                        <span><strong>25MB</strong></span>
+                                                    </div>
+                                                    <div class="preco">
+                                                        <span>
+                                                            R$ <strong> 69</strong>
+                                                            <p>,90<br>/MÊS</p>
+                                                        </span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="plan target">
+                                                <input name="sel_planoEmp" type="radio" id="nome_planoRadioEmp2"
+                                                    value="35 MEGA">
+                                                <label for="nome_planoRadioEmp2" class="plano-2 teste">
+                                                    <div class="velocidade">
+                                                        <span><strong>35MB</strong></span>
+                                                    </div>
+                                                    <div class="preco">
+                                                        <span>
+                                                            R$ <strong> 79</strong>
+                                                            <p>,90<br>/MÊS</p>
+                                                        </span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="plan target">
+                                                <input name="sel_planoEmp" type="radio" id="nome_planoRadioEmp3"
+                                                    value="50 MEGA">
+                                                <label for="nome_planoRadioEmp3" class="plano-3 teste">
+                                                    <div class="velocidade">
+                                                        <span><strong>50MB</strong></span>
+                                                    </div>
+                                                    <div class="preco">
+                                                        <span>
+                                                            R$ <strong> 89</strong>
+                                                            <p>,90<br>/MÊS</p>
+                                                        </span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="plan target">
+                                                <input name="sel_planoEmp" type="radio" id="nome_planoRadioEmp4"
+                                                    value="100 MEGA">
+                                                <label for="nome_planoRadioEmp4" class="plano-4 teste">
+                                                    <div class="velocidade">
+                                                        <span><strong>100MB</strong></span>
+                                                    </div>
+                                                    <div class="preco">
+                                                        <span>
+                                                            R$ <strong> 99</strong>
+                                                            <p>90<br>/MÊS</p>
+                                                        </span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <img src="../imagens/logo.png" alt="Logo Fibra Planos">
+                                    </div>
+                                    <div class="right flex">
+                                        <div class="valor">
+                                            <p class="right"> PLANO <strong>ILIMITADO</strong> ESCOLHIDO </p>
+                                            <input type="text" name="valor" readonly id="valor_totRadioEmp"
+                                                value="R$ 49,99*" />
+                                            <span>CUSTO / MÊS</span>
+                                        </div>
+                                        <input type="text" name="nome" required placeholder="Nome" class="m" />
+                                        <input type="text" name="celular" placeholder="Telefone/Whatsapp" class="m"
+                                            onKeyPress="MascaraCelular(form.celular);" maxlength="15" />
+                                        <input type="text" name="email" placeholder="E-mail" required
+                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="m" />
+                                        <input type="text" name="endereco" placeholder="Endereço" class="m" required />
+                                        <p><input type="submit" onclick="confirmacaoRadio()" value="CONTRATAR AGORA"
+                                                id="botao" /></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="menu-mobile">
+            <nav role="navigation">
+                <div class="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <!--Listra do menu-->
+                    <span></span>
+                    <!--Listra do menu-->
+                    <span></span>
+                    <!--Listra do menu-->
+                    <ul class="menu">
+                        <li><a href="../nossos-planos/">NOSSOS PLANOS</a></li>
+                        <li><a href="../quem-somos/">QUEM SOMOS</a></li>
+                        <li class="central"><a href="http://www.atendnet.net.br/central/login.php" target="_blank"
+                                class="active2">CENTRAL DO CLIENTE</a></li>
+                        <li><a href="../contato/">CONTATO</a></li>
+                        <a class="img-menu" href="../index.html"><img src="../imagens/logo.png" alt="Logo menu"></a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="interface flex">
+            <div class="deskt">
+                <div class="logo wow slideInDown" data-wow-delay=".5s" data-wow-duration=".3s">
+                    <a href="../index.html"><img src="../imagens/logo.png" alt="AtendNet Telecom logo"></a>
+                </div>
+                <div class="info-menu">
+                    <div class="infos">
+                        <div class="interface flex">
+                            <p class="wow slideInDown" data-wow-delay=".5s" data-wow-duration=".5s">
+                                <img src="../imagens/support.png" alt="Suporte img">ATENDIMENTO: 71 3233.3759 /
+                                99988.1538
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menu-desktop wow slideInDown" data-wow-delay=".8s" data-wow-duration=".6s">
+                        <nav>
+                            <ul>
+                                <li><a href="../nossos-planos/">NOSSOS PLANOS</a></li>
+                                <li><a href="../quem-somos/">QUEM SOMOS</a></li>
+                                <li class="central"><a href="http://www.atendnet.net.br/central/login.php" target="_blank"
+                                        class="active2">CENTRAL DO CLIENTE</a></li>
+                                <li><a href="../contato/">CONTATO</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="planos" class="wow flipInX" data-wow-delay=".5s" data-wow-duration=".8s">
+        <div class="interface flex">
+            <div class="titulos">
+                <h1>
+                    INTERNET 100% FIBRA
+                </h1>
+                <ul id="links">
+                    <li id="link-residencial" class="ativo">
+                        RESIDENCIAL</li>
+                    <li id="link-empresarial">
+                        EMPRESARIAL
+                    </li>
+                </ul>
+            </div>
+            <div class="lista-planos">
+
+                <div id="residencial">
+
+                    <div class="plano">
+                        <div class="velocidade">
+                            <h1>
+                                <strong>25</strong><br>
+                                MEGA
+                            </h1>
+                        </div>
+                        <div class="preco">
+                            <span>R$ <strong>69</strong>
+                                <p>,90<br>/mês</p>
+                            </span>
+                        </div>
+                        <div class="recursos">
+                            <p><img src="../imagens/check.png" alt="Check Image"> Velocidade 25 mbps</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Taxa de instalação</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Tecnologia Fibra Óptica</p>
+                            <p><img src="../imagens/check.png" alt="Check Image"> Assistir vídeos, ouvir
+                                músicas<br>online,
+                                downloads.</p>
+                        </div>
+                        <div class="botao">
+                            <a class="assinar desce-modal" href="#modal">ASSINAR AGORA</a>
+                        </div>
+                    </div>
+
+                    <div class="plano colored">
+                        <div class="velocidade">
+                            <h1>
+                                <strong>35</strong><br>
+                                MEGA
+                            </h1>
+                        </div>
+                        <div class="preco">
+                            <span>R$ <strong>79</strong>
+                                <p>,90<br>/mês</p>
+                            </span>
+                        </div>
+                        <div class="recursos">
+                            <p><img src="../imagens/check.png" alt="Check Image"> Velocidade 35 mbps</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Taxa de instalação</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Tecnologia Fibra Óptica</p>
+                            <p><img src="../imagens/check.png" alt="Check Image"> Mais velocidade para acessar<br>os
+                                conteúdos
+                                da Internet.</p>
+                        </div>
+                        <div class="botao">
+                            <a class="assinar desce-modal" href="#modal">ASSINAR AGORA</a>
+                        </div>
+                    </div>
+
+                    <div class="plano">
+                        <img class="top-colored" src="../imagens/plan-colored-top.png" alt="plan colored top">
+                        <div class="velocidade">
+                            <h1>
+                                <strong>50</strong><br>
+                                MEGA
+                            </h1>
+                        </div>
+                        <div class="preco">
+                            <span>R$ <strong>89</strong>
+                                <p>,90<br>/mês</p>
+                            </span>
+                        </div>
+                        <div class="recursos">
+                            <p><img src="../imagens/check.png" alt="Check Image"> Velocidade 50 mbps</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Taxa de instalação</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Tecnologia Fibra Óptica</p>
+                            <p><img src="../imagens/check.png" alt="Check Image"> Mais velocidade para acessar<br>os
+                                conteúdos
+                                da Internet.</p>
+                        </div>
+                        <div class="botao menos">
+                            <a class="assinar desce-modal" href="#modal">ASSINAR AGORA</a>
+                        </div>
+                    </div>
+
+                    <div class="plano">
+                        <div class="velocidade">
+                            <h1>
+                                <strong>100</strong><br>
+                                MEGA
+                            </h1>
+                        </div>
+                        <div class="preco">
+                            <span>R$ <strong>99</strong>
+                                <p>,90<br>/mês</p>
+                            </span>
+                        </div>
+                        <div class="recursos">
+                            <p><img src="../imagens/check.png" alt="Check Image"> Velocidade 100 mbps</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Taxa de instalação</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Tecnologia Fibra Óptica</p>
+                            <p><img src="../imagens/check.png" alt="Check Image"> Mais velocidade para acessar<br>os
+                                conteúdos
+                                da Internet.</p>
+                        </div>
+                        <div class="botao menos">
+                            <a class="assinar desce-modal" href="#modal">ASSINAR AGORA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="empresarial">
+
+                    <div class="plano">
+                        <div class="velocidade">
+                            <h1>
+                                <strong>25</strong><br>
+                                MEGA
+                            </h1>
+                        </div>
+                        <div class="preco">
+                            <span>R$ <strong>69</strong>
+                                <p>,90<br>/mês</p>
+                            </span>
+                        </div>
+                        <div class="recursos">
+                            <p><img src="../imagens/check.png" alt="Check Image"> Velocidade 90 mbps</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Taxa de instalação</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Tecnologia Fibra Óptica</p>
+                            <p><img src="../imagens/check.png" alt="Check Image"> Assistir vídeos, ouvir
+                                músicas<br>online,
+                                downloads.</p>
+                        </div>
+                        <div class="botao">
+                            <a class="assinar desce-modalEmp" href="#modal">ASSINAR AGORA</a>
+                        </div>
+                    </div>
+
+                    <div class="plano colored">
+                        <div class="velocidade">
+                            <h1>
+                                <strong>35</strong><br>
+                                MEGA
+                            </h1>
+                        </div>
+                        <div class="preco">
+                            <span>R$ <strong>79</strong>
+                                <p>,90<br>/mês</p>
+                            </span>
+                        </div>
+                        <div class="recursos">
+                            <p><img src="../imagens/check.png" alt="Check Image"> Velocidade 35 mbps</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Taxa de instalação</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Tecnologia Fibra Óptica</p>
+                            <p><img src="../imagens/check.png" alt="Check Image"> Mais velocidade para acessar<br>os
+                                conteúdos
+                                da Internet.</p>
+                        </div>
+                        <div class="botao">
+                            <a class="assinar desce-modalEmp" href="#modal">ASSINAR AGORA</a>
+                        </div>
+                    </div>
+
+                    <div class="plano">
+                        <img class="top-colored" src="../imagens/plan-colored-top.png" alt="plan colored top">
+                        <div class="velocidade">
+                            <h1>
+                                <strong>50</strong><br>
+                                MEGA
+                            </h1>
+                        </div>
+                        <div class="preco">
+                            <span>R$ <strong>89</strong>
+                                <p>,90<br>/mês</p>
+                            </span>
+                        </div>
+                        <div class="recursos">
+                            <p><img src="../imagens/check.png" alt="Check Image"> Velocidade 50 mbps</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Taxa de instalação</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Tecnologia Fibra Óptica</p>
+                            <p><img src="../imagens/check.png" alt="Check Image"> Mais velocidade para acessar<br>os
+                                conteúdos
+                                da Internet.</p>
+                        </div>
+                        <div class="botao menos">
+                            <a class="assinar desce-modalEmp" href="#modal">ASSINAR AGORA</a>
+                        </div>
+                    </div>
+
+                    <div class="plano">
+                        <div class="velocidade">
+                            <h1>
+                                <strong>100</strong><br>
+                                MEGA
+                            </h1>
+                        </div>
+                        <div class="preco">
+                            <span>R$ <strong>99</strong>
+                                <p>,90<br>/mês</p>
+                            </span>
+                        </div>
+                        <div class="recursos">
+                            <p><img src="../imagens/check.png" alt="Check Image"> Velocidade 100 mbps</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Taxa de instalação</p>
+                            <p><img src="../imagens/asterisk.png" alt="Asterisk Image"> Tecnologia Fibra Óptica</p>
+                            <p><img src="../imagens/check.png" alt="Check Image"> Mais velocidade para acessar<br>os
+                                conteúdos
+                                da Internet.</p>
+                        </div>
+                        <div class="botao menos">
+                            <a class="assinar desce-modalEmp" href="#modal">ASSINAR AGORA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aviso">
+                <p class="wow bounceInLeft" data-wow-delay=".5s" data-wow-duration=".8s"><img
+                        src="../imagens/asterisk.png" alt="Asterisk Image"> Consulte condições.</p>
+            </div>
+        </div>
+    </section>
+    <section id="wifi-turbo">
+        <div class="interface flex">
+            <img src="../imagens/wifi-turbo.png" alt="Wifi Turbo Image" class="wow bounceInRight" data-wow-delay=".5s"
+                data-wow-duration=".8s">
+            <div class="conteudo-wifi">
+                <div class="titulo-wifi">
+                    <h1 class="wow bounceInLeft" data-wow-delay=".5s" data-wow-duration=".8s">
+                        WIFI TURBO
+                    </h1>
+                </div>
+                <div class="texto-wifi">
+                    <p class="wow bounceInLeft" data-wow-delay=".5s" data-wow-duration=".9s">
+                        Você já escolheu a fibra ótica mais rápida.
+                    </p>
+                    <p class="wow bounceInLeft" data-wow-delay=".5s" data-wow-duration="1s">
+                        Agora você pode escolher dar mais alcance para seus dispositivos.
+                    </p>
+                    <p class="wow bounceInLeft" data-wow-delay=".5s" data-wow-duration="1.1s">
+                        A Atendnet possui o roteador ideal de acordo com a sua necessidade de cada
+                        cliente, para você que possui muitos aparelhos em sua residência. É ideal
+                        para assistir vídeos de alta qualidade, jogar online e fazer download de
+                        arquivos pesados.
+                    </p>
+                </div>
+                <div class="botao-wifi wow bounceInUp" data-wow-delay=".5s" data-wow-duration=".8s">
+                    <a href="#roteadorTurbo">QUERO UM ROTEADOR TURBO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="interface flex">
+            <address id="mobile" class="wow slideInDown" data-wow-delay=".5s" data-wow-duration=".5s">
+                <p>Rua Saldanha Marinho, 56 - Térreo - Loja - Caixa Dágua - Salvador-BA</p>
+                <p>Telefone: 71 3233.3759 </p>
+                <p>Whatsapp: 71 99988.1538</p>
+            </address>
+            <address id="desktop" class="wow slideInDown" data-wow-delay=".5s" data-wow-duration=".5s">
+                <p>Rua Saldanha Marinho, 56 - Térreo - Loja - Caixa Dágua - Salvador-BA</p>
+                <p>Telefone: 71 3233.3759 | Whatsapp: 71 99988.1538</p>
+            </address>
+            <div class="sociais wow slideInDown" data-wow-delay=".6s" data-wow-duration=".5s">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../imagens/facebook.png"
+                        alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../imagens/instagram.png"
+                        alt="Instagram Icon"></a>
+                <a href="https://api.whatsapp.com/send?phone=5571999881538" target="_blank"><img
+                        src="../imagens/whatsapp.png" alt="Instagram Icon"></a>
+            </div>
+            <a id="click-logo" href="http://clickslim.com.br/" class="wow slideInDown" data-wow-delay=".7s"
+                data-wow-duration=".5s"><img src="../imagens/logo_click.png" alt="ClickSlim Logo"></a>
+        </div>
+    </footer>
+    <script src="../dist/wow.js"></script>
+    <script>
+        wow = new WOW().init();
+    </script>
+</body>
+
+</html>

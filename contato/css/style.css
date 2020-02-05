@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+section#contact {
+    background-color: #f6f4f4;
+    padding: 100px 0 20px;
+    margin-top: 10px;
+    z-index: -1;
+    position: relative;
+    margin-top: -50px;
+}
+
+section#contact h1 {
+    color: #2a65ad;
+    font-size: 60px;
+    font-family: 'proximanova-black', sans-serif;
+    margin-bottom: 40px;
+}
+
+section#formulario-suporte {
+    background-color: #f6f4f4;
+}
+
+section#formulario-suporte form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#formulario-suporte form input.suporte {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #e7e8e5;
+    color: #5a5a5a;
+    font-family: 'panton-regular-webfont', sans-serif;
+    margin: 5px 0;
+    padding-left: 8px;
+}
+
+section#formulario-suporte form select {
+    width: 310px;
+    height: 40px;
+    border: 2px solid #e7e8e5;
+    color: #5a5a5a;
+    font-family: 'panton-regular-webfont', sans-serif;
+    margin: 5px 0;
+    padding-left: 8px;
+}
+
+section#formulario-suporte form textarea {
+    resize: none;
+    width: 300px;
+    height: 100px;
+    border: 2px solid #e7e8e5;
+    color: #5a5a5a;
+    font-family: 'panton-regular-webfont', sans-serif;
+    margin: 5px 0;
+    padding-left: 8px;
+}
+
+section#formulario-suporte form input#botao {
+    background-color: #062187;
+    font-family: 'panton-regular-webfont', sans-serif;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    border: 0 none;
+    font-size: 16px;
+    font-family: 'panton-bold-webfont', sans-serif;
+    align-self: flex-end;
+    margin-right: 5px;
+    transition: .3s;
+    cursor: pointer;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transition: .3s;
+}
+
+section#formulario-suporte form input#botao:hover {
+    width: 140px;
+    height: 40px;
+}
+
+section#formulario-suporte div.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+section#formulario-suporte div.infos h1 {
+    color: #6c6c6c;
+    font-family: 'panton-bold-webfont', sans-serif;
+    font-size: 30px;
+    margin: 20px 0;
+    width: 300px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+section#formulario-suporte div.infos span {
+    color: #6c6c6c;
+    font-family: 'decalotype-light-webfont', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+section#formulario-suporte div.pessoalmente span.ende {
+    font-size: 16px;
+}
+
+section#formulario-suporte div.telefone, section#formulario-suporte div.email, section#formulario-suporte div.acesso, section#formulario-suporte div.pessoalmente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 30px 0;
+}
+
+section#formulario-suporte div.email {
+    margin-bottom: 50px;
+}
+
+section#formulario-suporte div.pessoalmente {
+    margin-bottom: 80px;
+}
+
+section#formulario-suporte div.acesso span.contr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a65ad;
+    padding: 30px 20px;
+    border-radius: 30px;
+}
+
+section#formulario-suporte div.acesso span.contr div.text-img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    margin-bottom: -40px;
+}
+
+section#formulario-suporte div.acesso span.contr div.text-img img {
+    width: 64px;
+    height: 64px;
+}
+
+section#formulario-suporte div.acesso span.contr div.text-img p {
+    width: 190px;
+    text-align: left;
+    font-family: 'proximanova-regular', sans-serif;
+    margin-left: 10px;
+}
+
+section#formulario-suporte div.acesso span.contr a {
+    color: #fff;
+    font-family: 'proximanova-regular', sans-serif;
+    background-color: #1cb6f0;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 20px;
+    position: relative;
+    left: 40px;
+    transition: .4s;
+    -o-transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+}
+
+section#formulario-suporte div.acesso span.contr a:hover {
+    padding: 8px 20px;
+}
+
+
+@media screen and (min-width:624px){ 
+    section#formulario-suporte form input.suporte {
+        width: 259px;
+        margin: 6px 9px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    section#formulario-suporte form select {
+        width: 268px;
+        margin-left: 20px;
+        position: relative;
+        right: 9px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    section#formulario-suporte form input.s {
+        width: 551px;
+    }
+
+    section#formulario-suporte form textarea {
+        width: 551px;
+        height: 135px;
+        font-size: 18px;
+    }
+
+    section#formulario-suporte form input#botao {
+        width: 178px;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    section#formulario-suporte form input#botao:hover {
+        width: 188px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width:1200px){ 
+    section#contact {
+        padding: 190px 0 40px;
+        margin-top: -90px;
+    }
+
+    section#contact h1 {
+        font-size: 55px;
+    }
+
+    section#formulario-suporte form {
+        align-self: flex-start;
+        position: relative;
+        right: 40px;
+    }
+
+    section#formulario-suporte div.flex {
+        flex-direction: row;
+    }
+
+    section#formulario-suporte form div.flex {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    section#formulario-suporte div.infos div.flex {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    section#formulario-suporte div.infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: unset;
+        position: relative;
+        bottom: 20px;
+        left: 40px
+    }
+
+    section#formulario-suporte div.infos h1 {
+        font-size: 30px;
+        margin: 20px 0;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    section#formulario-suporte div.infos div.telefone h1 {
+        padding-right: 300px;
+    }
+
+    section#formulario-suporte div.infos div.telefone span {
+        font-size: 22px;
+        margin: 10px;
+    }
+
+    section#formulario-suporte div.infos span {
+        color: #6c6c6c;
+        font-family: 'decalotype-light-webfont', sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    section#formulario-suporte div.infos div.email-acesso div.email span {
+        color: #6c6c6c;
+        font-family: 'decalotype-light-webfont', sans-serif;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    section#formulario-suporte div.pessoalmente span {
+        padding-left: 8px;
+    }
+
+    section#formulario-suporte div.pessoalmente span.ende {
+        font-size: 17px;
+    
+    }
+
+    section#formulario-suporte div.email span.send {
+        position: relative;
+        top: -30px;
+        margin-top: -30px;
+    }
+
+    section#formulario-suporte div.email span.emai {
+        font-size: 18px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    section#formulario-suporte div.telefone, section#formulario-suporte  div.pessoalmente {
+        align-items: unset;
+        width: 610px;
+        margin: 0;
+    }
+
+    section#formulario-suporte div.email-acesso {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 400px;
+        margin-top: -30px;
+    }
+
+    section#formulario-suporte div.email-acesso div.text-email {
+        text-align: left;
+        align-self: flex-start;
+        border-right: 2px solid #e3e3e3;
+        padding: 50px 20px 50px 8px;
+    }
+
+    section#formulario-suporte div.email h1 {
+        align-self: flex-start;
+        width: 270px;
+        padding-right: 60px;
+    }
+
+    section#formulario-suporte div.acesso h1 {
+        width: 240px;
+        margin-left: 20px
+    }
+
+    section#formulario-suporte div.email, section#formulario-suporte div.acesso {
+        width: auto;
+    }
+
+    section#formulario-suporte div.email {
+        margin-bottom: unset;
+    }
+
+    section#formulario-suporte div.pessoalmente {
+        margin-top: -40px;
+        margin-bottom: 80px;
+    }
+
+    section#formulario-suporte div.pessoalmente h1 {
+        padding-right: 300px;
+    }
+
+    section#formulario-suporte div.acesso span.contr {
+        padding: 30px 10px;
+        border-radius: 20px;
+    }
+
+    section#formulario-suporte div.acesso span.contr div.text-img {
+        margin-bottom: -10px;
+    }
+
+    section#formulario-suporte div.acesso span.contr div.text-img p {
+        width: 150px;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    section#formulario-suporte div.acesso span.contr a {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    section#formulario-suporte div.acesso span.contr a:hover {
+        padding: 5px 15px;
+    }
+}

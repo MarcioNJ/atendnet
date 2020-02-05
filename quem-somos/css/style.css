@@ -1,0 +1,235 @@
+@charset "utf-8";
+section#contact {
+    background-color: #f6f4f4;
+    padding: 100px 0 20px;
+    margin-top: 10px;
+    z-index: -1;
+    position: relative;
+    margin-top: -50px;
+}
+
+section#contact h1 {
+    color: #2a65ad;
+    font-size: 60px;
+    font-family: 'proximanova-black', sans-serif;
+    margin-bottom: 40px;
+}
+
+section#quem-somos {
+    display: flex;
+    width: 100%;
+    background-color: #f6f4f4;
+}
+
+section#quem-somos img {
+    display: flex;
+    width: 95%;
+    max-width: 510px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+section#quem-somos div.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#quem-somos div.text p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'proximanova-regular', sans-serif;
+    width: 95%;
+    font-size: 17px;
+    margin: 20px 0;
+    color: #6d6d6d;
+}
+
+section#quem-somos div.text p:last-of-type {
+    margin-bottom: 40px;
+}
+
+section#beneficios {
+    background-color: #f6f4f4;
+}
+
+section#beneficios div.beneficio {
+    width: 300px;
+    margin: 20px 0;
+}
+
+section#beneficios div.beneficio div.flex {
+    flex-direction: column;
+}
+
+section#beneficios div.beneficio div.image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section#beneficios div.beneficio h1 {
+    text-align: left;
+    font-family: 'proximanova-black', sans-serif;
+    color: #2a65ad;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+section#beneficios div.beneficio p {
+    text-align: left;
+    font-family: 'proximanova-light', sans-serif;
+    margin-left: 10px;
+    line-height: 18px;
+}
+
+section#beneficios span.contr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a65ad;
+    padding: 30px 20px;
+    border-radius: 30px;
+}
+
+section#beneficios span.contr div.text-img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+}
+
+section#beneficios span.contr div.text-img img {
+    width: 64px;
+    height: 64px;
+}
+
+section#beneficios span.contr div.text-img p {
+    width: 190px;
+    text-align: left;
+    font-family: 'proximanova-regular', sans-serif;
+    margin-left: 10px;
+    color: #fff;
+}
+
+section#beneficios span.contr a {
+    color: #fff;
+    font-family: 'proximanova-regular', sans-serif;
+    background-color: #1cb6f0;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 20px;
+    position: relative;
+    left: 40px;
+    transition: .4s;
+    -o-transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+}
+
+section#beneficios span.contr a:hover {
+    padding: 8px 20px;
+}
+
+@media screen and (min-width:1200px){ 
+    section#contact {
+        padding: 150px 0 10px;
+    }
+
+    section#contact h1 {
+        font-size: 50px;
+    }
+
+    section#quem-somos {
+        padding: 20px 0 60px;
+    }
+
+    section#quem-somos div.flex {
+        flex-direction: row-reverse;
+    }
+    
+    section#quem-somos img {
+        display: flex;
+        width: 95%;
+        max-width: 560px;
+        margin-top: unset;
+    }
+    
+    section#quem-somos div.text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
+    }
+    
+    section#quem-somos div.text p {
+        font-size: 22px;
+        width: 96%;
+        margin: 0 0 0 15px;
+    }
+
+    section#beneficios {
+        padding: 5px 0 40px;
+    }
+
+    section#beneficios div.beneficio div.image {
+        align-self: flex-start;
+    }
+
+    section#beneficios div.flex {
+        flex-direction: row;
+    }
+    
+    section#beneficios div.beneficio {
+        width: 260px;
+        height: 220px;
+        margin: 30px 25px;
+    }
+
+    section#beneficios div.beneficio h1 {
+        font-size: 30px;
+    }
+    
+    section#beneficios div.beneficio p {
+        line-height: 20px;
+        font-size: 20px;
+        width: 190px;
+        margin-top: 18px;
+    }
+    
+    section#beneficios div.beneficio p.marg {
+        margin-right: 40px;
+    }
+
+    
+    section#beneficios span.contr {
+        padding: 30px 15px;
+        border-radius: 20px;
+        position: relative;
+        left: 20px;
+    }
+
+    section#beneficios span.contr div.text-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    section#beneficios span.contr div.text-img p {
+        width: 190px;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    section#beneficios span.contr a {
+        padding: 5px 20px;
+        font-size: 20px;
+    }
+
+    section#beneficios span.contr a:hover {
+        padding: 5px 25px;
+    }
+}

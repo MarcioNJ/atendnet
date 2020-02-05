@@ -1,0 +1,522 @@
+@charset "utf-8";
+div.ism-slider {
+    z-index: 1;
+}
+
+section#boleto-velocidade {
+    background-color: #f6f4f4;
+    padding: 40px 0;
+}
+
+section#boleto-velocidade a {
+    margin: 10px 0;
+    transition: top .5s;
+    top: 0;
+    position: relative;
+    -moz-transition: top .5s;
+    -o-transition: top .5s;
+    -webkit-transition: top .5s;
+}
+
+section#boleto-velocidade a:hover {
+    top: -10px;
+}
+
+section#boleto-velocidade img {
+    width: 97%;
+    max-width: 563px;
+}
+
+section#planos {
+    background-color: #f6f4f4;
+}
+
+section#planos div.titulos h1 {
+    color: #585858;
+    font-family: 'proximanova-black', sans-serif;
+    font-size: 27px;
+}
+
+section#planos div.titulos h2 {
+    color: #585858;
+    font-family: 'proximanova-regular', sans-serif;
+    font-size: 18px;
+}
+
+section#planos div.plano {
+    width: 270px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.45);
+}
+
+section#planos div.colored {
+    background-color: #2a65ac;
+}
+
+section#planos div.colored img#top-colored {
+    width: 80px;
+    position: relative;
+    margin-top: -75px;
+    top: 60px;
+    left: 114px;
+}
+
+section#planos div.plano div.velocidade h1 {
+    font-size: 28px;
+    color: #2a65ac;
+    font-family: 'proximanova-light', sans-serif;
+    margin-top: 60px;
+}
+
+section#planos div.colored div.velocidade h1 {
+    color: #fff;
+}
+
+section#planos div.plano div.velocidade h1 strong {
+    font-size: 80px;
+    font-family: 'proximanova-black', sans-serif;
+    line-height: 20px;
+}
+
+section#planos div.plano div.preco span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #585858;
+    font-size: 18px;
+    font-family: 'proximanova-light', sans-serif;
+    margin: 10px 0;
+}
+
+section#planos div.colored div.preco span {
+    color: #1cb6f0;
+}
+
+section#planos div.plano div.preco span strong {
+    font-size: 60px;
+    font-family: 'proximanova-extr-bold', sans-serif;
+}
+
+section#planos div.plano div.preco span p {
+    text-align: center;
+}
+
+section#planos div.plano div.recursos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+section#planos div.plano div.recursos p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 250px;
+    color: #585858;
+    font-family: 'proximanova-light', sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid #1cb6f0;
+    padding-bottom: 6px;
+    margin: 5px 0;
+}
+
+section#planos div.colored div.recursos p {
+    color: #fff;
+}
+
+section#planos div.plano div.recursos p:last-child {
+    align-items: flex-start;
+    text-align: left;
+    border-bottom: unset;
+}
+
+section#planos div.plano div.recursos p img {
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+section#planos div.plano div.botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+section#planos div.plano div.botao a {
+    color: #fff;
+    background-color: #2a65ac;
+    font-family: 'proximanova-bold', sans-serif;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    -webkit-transition: .4s;
+}
+
+section#planos div.colored div.botao a {
+    background-color: #1cb6f0;
+}
+
+section#planos div.plano div.botao a:hover {
+    padding: 15px 25px;
+}
+
+section#planos div.aviso {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+section#planos div.aviso p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #585858;
+    font-family: 'proximanova-regular', sans-serif;
+    position: relative;
+    right: 5%;
+    bottom: 30px;
+}
+
+section#planos div.aviso p img {
+    margin-right: 5px;
+}
+
+section#planos div.go-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section#planos div.go-plan a {
+    background-color: transparent;
+    border: 2px solid #2a65ac;
+    color: #585858;
+    font-size: 18px;
+    padding: 10px 18px;
+    font-family: 'proximanova-bold', sans-serif;
+    border-radius: 15px;
+    margin: 5px 0 80px;
+    transition: .4s;
+    -o-transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+}
+
+section#planos div.go-plan a:hover {
+    background-color: #2a65ac;
+    color: #fff;
+}
+
+section#baixe-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a65ac;
+    padding: 40px 0 10px;
+}
+
+section#baixe-app img {
+    width: 320px;
+}
+
+section#baixe-app div.titulo-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+section#baixe-app div.titulo-app h1 {
+    color: #fff;
+    font-family: 'proximanova-black', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    line-height: 28px;
+    width: 300px;
+}
+
+section#baixe-app div.titulo-app h1 strong.large {
+    font-size: 36px;
+}
+
+section#baixe-app div.titulo-app h1 strong.blue {
+    color: #00f0ff;
+}
+
+section#baixe-app div.titulo-app h2 {
+    color: #fff;
+    font-family: 'proximanova-regular', sans-serif;
+    text-align: left;
+    font-size: 15px;
+    width: 300px;
+}
+
+section#baixe-app div.texto-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 10px;
+}
+
+section#baixe-app div.texto-app p {
+    text-align: left;
+    color: #fff;
+    width: 300px;
+    font-family: 'proximanova-regular', sans-serif;
+}
+
+section#baixe-app div.loja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+section#baixe-app div.loja h3 {
+    text-align: left;
+    color: #fff;
+    width: 300px;
+    font-size: 18px;
+    font-family: 'proximanova-regular', sans-serif;
+    margin-bottom: 20px;
+}
+
+section#baixe-app div.loja div.link-loja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#baixe-app div.loja div.link-loja a {
+    margin: 10px 0;
+    transition: top .5s;
+    top: 0;
+    position: relative;
+    -moz-transition: top .5s;
+    -o-transition: top .5s;
+    -webkit-transition: top .5s;
+}
+
+section#baixe-app div.loja div.link-loja a:hover {
+    top: -10px;
+}
+
+section#baixe-app div.loja div.link-loja a img {
+    width: 144px;
+}
+
+@media screen and (min-width:1200px){ 
+    div.ism-slider {
+        z-index: 1;
+    }
+
+    section#boleto-velocidade {
+        background-color: #f6f4f4;
+        padding: 60px 0 40px;
+    }
+
+    section#boleto-velocidade div.flex {
+        flex-direction: row;
+    }
+    
+    section#boleto-velocidade a:first-of-type {
+        margin-right: 60px;
+    }
+    
+    section#boleto-velocidade img {
+        width: 100%;
+    }
+
+    section#planos div.titulos h1 {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    section#planos div.titulos h2 {
+        font-size: 26px;
+    }
+
+    section#planos div.lista-planos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#planos div.plano {
+        width: 360px;
+        border-radius: 30px;
+        margin: 50px 20px;
+    }
+
+    section#planos div.colored img#top-colored {
+        width: 122px;
+        position: relative;
+        margin-top: -115px;
+        top: 92px;
+        left: 148px;
+    }
+
+    section#planos div.plano div.velocidade h1 {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    section#planos div.plano div.velocidade h1 strong {
+        font-size: 120px;
+    }
+
+    section#planos div.plano div.preco span {
+        font-size: 26px;
+        margin: 20px 0;
+    }
+
+    section#planos div.plano div.preco span strong {
+        font-size: 70px;
+        margin: 0 0 0 8px;
+        font-family: 'proximanova-extr-bold', sans-serif;
+    }
+
+    section#planos div.plano div.recursos p {
+        width: 260px;
+        font-size: 18px;
+        border-bottom: 1px solid #1cb6f0;
+        padding-bottom: 6px;
+        margin: 5px 0 0;
+    }
+
+    section#planos div.colored div.recursos p {
+        width: 270px;
+    }
+
+    section#planos div.plano div.botao {
+        margin-top: 10px;
+    }
+
+    section#planos div.plano div.menos {
+        margin-top: 0;
+    }
+
+    section#planos div.plano div.botao a {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+
+    section#planos div.plano div.botao a:hover {
+        padding: 12px 35px;
+    }
+
+    section#planos div.aviso p {
+        left: 0;
+        bottom: 20px;
+    }
+
+    section#planos div.go-plan a {
+        font-size: 22px;
+        padding: 15px 25px;
+        border-radius: 25px;
+        margin: 5px 0 60px;
+    }
+    
+    section#baixe-app {
+        height: 539px;
+        padding: unset;
+    }
+
+    section#baixe-app div.flex {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    section#baixe-app div.conteudo-app {
+        margin-left: 30px;
+    }
+
+    section#baixe-app img {
+        width: 657px;
+    }
+
+    section#baixe-app div.titulo-app {
+        margin-top: 0;
+    }
+
+    section#baixe-app div.titulo-app h1 {
+        font-size: 50px;
+        line-height: 45px;
+        width: 500px;
+    }
+
+    section#baixe-app div.titulo-app h1 strong.large {
+        font-size: 60px;
+    }
+
+    section#baixe-app div.titulo-app h2 {
+        font-size: 25px;
+        width: 500px;
+    }
+
+    section#baixe-app div.texto-app {
+        align-items: flex-start;
+        justify-content: center;
+        margin: 30px 0 10px;
+    }
+
+    section#baixe-app div.texto-app p {
+        font-size: 20px;
+        width: 380px;
+        line-height: 25px;
+    }
+
+    section#baixe-app div.loja {
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+
+    section#baixe-app div.loja h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    section#baixe-app div.loja div.link-loja {
+        flex-direction: row;
+    }
+
+    section#baixe-app div.loja div.link-loja a {
+        margin: 0 5px;
+    }
+
+    section#baixe-app div.loja div.link-loja a:first-of-type {
+        margin-left: 0;
+    }
+
+    section#baixe-app div.loja div.link-loja a img {
+        width: 144px;
+        height: 50px;
+    }
+}
